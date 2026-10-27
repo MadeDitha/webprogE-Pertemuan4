@@ -12,13 +12,28 @@
             display: none;
         }
         .kotak-info{
-            background-color: #ffbc04;
+            background-color: #5aa6d8;
             padding: 15px;
             margin: 10px;
-            border: 2px solid #ff0000;
+            border: 2px solid #1f1f1f;
             border-radius: 6px;
         }
-       
+       .btn-close{
+            position: relative;
+            top: 8px;
+            right: 10px;
+            border: none;
+            background: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #000000
+
+       }
+       .btn-close:hover{
+            color: #ff0000
+       }
+
     </style>
 
 </head>
@@ -26,19 +41,33 @@
 
 <div class="flex-center">
     <div class="kartu-profile">
-        <h2>Budi Sudarsono</h2>
+        <h2>Kakek Zeuzz</h2>
         <p>Web Desain</p>
-        <button onclick="info()" class="btn-detail">Info lengkap</button>
+        <button id="btndetail" onclick="info()" class="btn-detail">Info lengkap</button>
     </div>
 </div>
 
-<div class="kotak-info sembunyi">
+<div class="kotak-info sembunyi" id="infobox">
+    <button onclick= "tutupdetail()" class="btn-close">&times;</button>
     <h1> Informasi Detail </h1>
 </div>
 
 <script>
     function info(){
-        alert("Tombol Lengkap di ke clik");
+        //alert("Tombol Lengkap di ke clik");
+        let info = document.getElementById("infobox");
+        let btndetail = document.getElementById("btndetail");
+
+        info.style.display = "block"; 
+        btndetail.style.display = "none";
+    }
+     function tutupdetail(){
+        //alert("Tombol Lengkap di ke clik");
+        let info = document.getElementById("infobox");
+        let btndetail = document.getElementById("btndetail");
+
+        info.style.display = "none"; 
+        btndetail.style.display = "inline-block";
     }
 </script>
 </body>

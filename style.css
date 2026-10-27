@@ -16,16 +16,16 @@
     padding: 30px;
     width: 300px;
     text-align: center;
-    border: 2px solid #007bff;
-    border-radius: 67px 0;
+    border: 2px solid #0e73f7;
+    border-radius: 50px 0;
     box-shadow: 13px 15px 6px -1px rgba(0, 0, 0.5);
  }
  .kartu-profile h2{
-    color: #d3230c;
+    color: #000000;
  }
  .kartu-profile p{
     margin: 0;
-    color:#007bff;
+    color:#000000;
     font-size: 20px;
  }
 
